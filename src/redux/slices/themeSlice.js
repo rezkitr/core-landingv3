@@ -3,7 +3,7 @@ import { THEME } from '@/utils/enum'
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  currentTheme: THEME.DARK,
+  currentTheme: THEME.LIGHT,
 }
 
 export const themeSlice = createSlice({

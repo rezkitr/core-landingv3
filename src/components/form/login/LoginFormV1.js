@@ -1,12 +1,9 @@
 'use client'
 import { Button } from '@/components'
-import { InputItem, InputPassword } from '@/components/input'
-import { toggleTheme } from '@/redux/slices/themeSlice'
+import { InputCheckBox, InputItem, InputPassword } from '@/components/input'
 import Link from 'next/link'
-import { useDispatch } from 'react-redux'
 
 const LoginFormV1 = () => {
-  const dispatch = useDispatch()
   return (
     <div className="login-form">
       <div className="mb-12">
@@ -20,14 +17,9 @@ const LoginFormV1 = () => {
           <InputItem type="text" placeholder="Nomor Handphone" />
           <InputPassword placeholder="Password" />
         </div>
-        <div className="flex justify-between items-center text-sm">
+        <div className="flex items-center justify-between text-sm">
           <div className="flex items-center gap-2">
-            <InputItem
-              type="checkbox"
-              id="rememberme"
-              name="rememberme"
-              className="h-fit"
-            />
+            <InputCheckBox type="checkbox" id="rememberme" name="rememberme" />
             <label for="rememberme" className="text-gray-400">
               Ingatkan Saya
             </label>
@@ -37,18 +29,17 @@ const LoginFormV1 = () => {
           </Link>
         </div>
         <div className="mt-8">
-          <Button className="bg-gray-950 text-white mb-6 submit-btn">
+          <Button className="submit-btn mb-6 bg-gray-950 text-white">
             Masuk
           </Button>
           <Link className="text-sm text-gray-400" href="/">
             Belum punya akun?
           </Link>
-          <Button className="border border-gray-950 text-gray-950 mt-3 register-btn">
+          <Button className="register-btn mt-3 border border-gray-950 text-gray-950">
             Daftar Sekarang
           </Button>
         </div>
       </form>
-      <button onClick={() => dispatch(toggleTheme())}>Toogle Theme</button>
     </div>
   )
 }

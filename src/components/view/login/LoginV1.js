@@ -4,11 +4,11 @@ import './styles/loginV1.scss'
 
 const LoginV1 = () => {
   return (
-    <div className="flex h-full login-v1">
-      <div className="flex-1 py-14 pl-12 pr-36 form-section">
+    <div className="login-v1 flex h-full">
+      <div className="form-section flex-1 py-14 pl-12 pr-36">
         <div className="flex items-center gap-2">
           <Image src="/icons/logo.png" alt="logo" width={52} height={32} />
-          <h5 className="font-semibold logo-text">GameManiac</h5>
+          <h5 className="logo-text font-semibold">GameManiac</h5>
         </div>
         <div className="mt-28">
           <LoginFormV1 />

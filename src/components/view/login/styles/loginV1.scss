@@ -12,6 +12,9 @@
         input {
           @apply bg-softGray;
         }
+        input[type='checkbox'] {
+          @apply border-gray-300 checked:bg-blue-700;
+        }
       }
     }
   }
@@ -33,6 +36,9 @@
         }
         input {
           @apply bg-alternativeGray text-white;
+        }
+        input[type='checkbox'] {
+          @apply bg-primaryBlack border-gray-300 checked:bg-blue-700;
         }
         .submit-btn {
           @apply bg-white text-primaryBlack;

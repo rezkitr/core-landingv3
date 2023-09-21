@@ -4,7 +4,7 @@ const Button = ({ children, type, className, disabled }) => {
   return (
     <button
       type={type}
-      className={`w-full rounded-xl h-14 font-semibold ${className}`}
+      className={`h-14 w-full rounded-xl font-semibold ${className}`}
       disabled={disabled}
     >
       {children}
