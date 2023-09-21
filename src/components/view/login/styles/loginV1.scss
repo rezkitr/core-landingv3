@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// LIGHT MODE
+.light {
+  .login-v1 {
+    .form-section {
+      @apply bg-white;
+
+      .login-form {
+        input {
+          @apply bg-softGray;
+        }
+      }
+    }
+  }
+}
+
+// DARK MODE
+.dark {
+  .login-v1 {
+    .form-section {
+      @apply bg-primaryBlack;
+
+      .logo-text {
+        @apply text-white;
+      }
+
+      .login-form {
+        h1 {
+          @apply text-white;
+        }
+        input {
+          @apply bg-alternativeGray text-white;
+        }
+        .submit-btn {
+          @apply bg-white text-primaryBlack;
+        }
+        .register-btn {
+          @apply border-white text-white;
+        }
+        a {
+          @apply text-gray-400;
+        }
+        .forget-pwd {
+          @apply text-gray-300;
+        }
+      }
+    }
+  }
+}

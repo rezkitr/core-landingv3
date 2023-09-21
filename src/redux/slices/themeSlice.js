@@ -1,8 +1,9 @@
+'use client'
 import { THEME } from '@/utils/enum'
 import { createSlice } from '@reduxjs/toolkit'
 
 const initialState = {
-  theme: THEME.LIGHT,
+  currentTheme: THEME.DARK,
 }
 
 export const themeSlice = createSlice({
@@ -10,7 +11,8 @@ export const themeSlice = createSlice({
   initialState,
   reducers: {
     toggleTheme: (state) => {
-      state.theme = state.theme === THEME.DARK ? THEME.LIGHT : THEME.LIGHT
+      state.currentTheme =
+        state.currentTheme === THEME.DARK ? THEME.LIGHT : THEME.DARK
     },
   },
 })

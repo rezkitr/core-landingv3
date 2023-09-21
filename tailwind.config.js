@@ -6,6 +6,14 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   darkMode: 'class',
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        primaryBlack: '#282828',
+        softGray: '##F3F3F3',
+        alternativeGray: '#3E3E3E',
+      },
+    },
+  },
   plugins: [],
 }
