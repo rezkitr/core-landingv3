@@ -12,10 +12,10 @@ const AuthLayoutV3 = ({ children }) => {
         <LogoBrand />
         <div className="mt-28">{children}</div>
       </div>
-      <div className="flex flex-[1.8] items-center py-14 pr-12">
+      <div className="banner-section flex flex-[1.8] items-center py-14 pr-12">
         <div className="relative flex h-full w-full items-center justify-center">
-          <div className="banner-wrapper absolute inset-0 before:bg-red-500" />
-          <div className="banner-inner absolute inset-1 z-10 before:bg-white" />
+          <div className="banner-wrapper absolute inset-0" />
+          <div className="banner-inner absolute inset-1 z-10" />
           <div className="banner relative z-20 inline-block h-[96%] w-[97%] before:bg-[url('/images/login-banner-3.png')]" />
           <svg
             style={{ visibility: 'hidden', position: 'absolute' }}
