@@ -12,7 +12,7 @@ const LoginV1 = () => {
           <LoginForm />
         </div>
       </div>
-      <div className="flex-[1.8] py-8">
+      <div className="flex-[1.8]">
         <div className="relative h-full">
           <Image
             src="/images/login-banner.png"
