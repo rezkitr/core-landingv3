@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.auth-v3 {
+  .banner {
+    filter: url('#roundedCorner');
+
+    &::before {
+      content: '';
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(
+        0% 21%,
+        30% 21%,
+        30% 0,
+        100% 0,
+        100% 79%,
+        61% 79%,
+        61% 100%,
+        0 100%
+      );
+    }
+  }
+
+  .banner-wrapper,
+  .banner-inner {
+    filter: url('#roundedCorner');
+
+    &::before {
+      content: '';
+      display: block;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(
+        0% 20%,
+        29% 20%,
+        29% 0,
+        100% 0,
+        100% 80%,
+        62% 80%,
+        62% 100%,
+        0 100%
+      );
+    }
+  }
+}
