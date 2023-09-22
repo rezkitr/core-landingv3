@@ -4,7 +4,7 @@
 
 // LIGHT MODE
 .light {
-  .login-v2 {
+  .auth-v2 {
     .form-section {
       @apply bg-white;
 
@@ -22,7 +22,7 @@
 
 // DARK MODE
 .dark {
-  .login-v2 {
+  .auth-v2 {
     .banner {
       @apply bg-primaryBlack;
     }
@@ -61,7 +61,7 @@
   }
 }
 
-.login-v2 {
+.auth-v2 {
   .banner-img {
     clip-path: polygon(
       0 0,

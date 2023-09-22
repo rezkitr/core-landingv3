@@ -4,17 +4,10 @@
 
 // LIGHT MODE
 .light {
-  .login-v4 {
-    .shadow-layer {
-      background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0.7),
-        rgba(255, 255, 255, 0)
-      );
-    }
-
+  .auth-v1 {
     .form-section {
+      @apply bg-white;
+
       .login-form {
         input {
           @apply bg-softGray;
@@ -29,17 +22,10 @@
 
 // DARK MODE
 .dark {
-  .login-v4 {
-    .shadow-layer {
-      background-image: linear-gradient(
-        to right,
-        rgba(41, 41, 41, 1),
-        rgba(41, 41, 41, 0.7),
-        rgba(44, 44, 44, 0)
-      );
-    }
-
+  .auth-v1 {
     .form-section {
+      @apply bg-primaryBlack;
+
       .logo-text {
         @apply text-white;
       }
@@ -49,8 +35,7 @@
           @apply text-white;
         }
         input {
-          @apply text-white border border-white;
-          background: rgba(255, 255, 255, 0.19);
+          @apply bg-alternativeGray text-white;
         }
         input[type='checkbox'] {
           @apply bg-primaryBlack border-gray-300 checked:bg-blue-700;
@@ -68,6 +53,12 @@
           @apply text-gray-300;
         }
       }
+    }
+  }
+
+  .login-v2 {
+    .banner {
+      @apply bg-primaryBlack;
     }
   }
 }
