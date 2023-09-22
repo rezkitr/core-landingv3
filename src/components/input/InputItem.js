@@ -1,10 +1,11 @@
+'use client'
 import PropTypes from 'prop-types'
 
 const InputItem = ({ className, ...props }) => {
   return (
     <input
       {...props}
-      className={`rounded-xl bg-gray-100 h-14 px-5 focus:outline-none ${className}`}
+      className={`h-14 rounded-xl bg-gray-100 px-5 focus:outline-none ${className}`}
     />
   )
 }

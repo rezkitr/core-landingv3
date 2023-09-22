@@ -12,11 +12,11 @@ const InputPassword = ({ className, ...props }) => {
     <div className="relative">
       <input
         type={isShowPassword ? 'text' : 'password'}
-        className="rounded-xl bg-gray-100 h-14 px-5 focus:outline-none w-full"
+        className="h-14 w-full rounded-xl bg-gray-100 px-5 focus:outline-none"
         {...props}
       />
       <div
-        className="absolute right-5 top-0 bottom-0 my-auto h-fit text-xl cursor-pointer text-gray-400"
+        className="absolute inset-y-0 right-5 my-auto h-fit cursor-pointer text-xl text-gray-400"
         onClick={toggleShowPassword}
       >
         {isShowPassword ? <BsEye /> : <BsEyeSlash />}

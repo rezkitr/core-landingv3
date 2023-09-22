@@ -4,7 +4,8 @@
 
 // LIGHT MODE
 .light {
-  .login-v1 {
+  .login-v1,
+  .login-v2 {
     .form-section {
       @apply bg-white;
 
@@ -22,7 +23,8 @@
 
 // DARK MODE
 .dark {
-  .login-v1 {
+  .login-v1,
+  .login-v2 {
     .form-section {
       @apply bg-primaryBlack;
 
@@ -54,5 +56,39 @@
         }
       }
     }
+  }
+
+  .login-v2 {
+    .banner {
+      @apply bg-primaryBlack;
+    }
+  }
+}
+
+.login-v2 {
+  .banner-img {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      0 100%,
+      2% 95%,
+      1% 85%,
+      2% 80%,
+      1% 78%,
+      2% 70%,
+      1% 66%,
+      2% 61%,
+      1% 54%,
+      3% 47%,
+      1% 43%,
+      3% 40%,
+      1% 34%,
+      2% 27%,
+      1% 21%,
+      2% 18%,
+      1% 10%,
+      2% 5%
+    );
   }
 }
