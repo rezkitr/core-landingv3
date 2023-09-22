@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// LIGHT MODE
+.light {
+  .login-v2 {
+    .form-section {
+      @apply bg-white;
+
+      .login-form {
+        input {
+          @apply bg-softGray;
+        }
+        input[type='checkbox'] {
+          @apply border-gray-300 checked:bg-blue-700;
+        }
+      }
+    }
+  }
+}
+
+// DARK MODE
+.dark {
+  .login-v2 {
+    .banner {
+      @apply bg-primaryBlack;
+    }
+
+    .form-section {
+      @apply bg-primaryBlack;
+
+      .logo-text {
+        @apply text-white;
+      }
+
+      .login-form {
+        h1 {
+          @apply text-white;
+        }
+        input {
+          @apply bg-alternativeGray text-white;
+        }
+        input[type='checkbox'] {
+          @apply bg-primaryBlack border-gray-300 checked:bg-blue-700;
+        }
+        .submit-btn {
+          @apply bg-white text-primaryBlack;
+        }
+        .register-btn {
+          @apply border-white text-white;
+        }
+        a {
+          @apply text-gray-400;
+        }
+        .forget-pwd {
+          @apply text-gray-300;
+        }
+      }
+    }
+  }
+}
+
+.login-v2 {
+  .banner-img {
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      0 100%,
+      2% 95%,
+      1% 85%,
+      2% 80%,
+      1% 78%,
+      2% 70%,
+      1% 66%,
+      2% 61%,
+      1% 54%,
+      3% 47%,
+      1% 43%,
+      3% 40%,
+      1% 34%,
+      2% 27%,
+      1% 21%,
+      2% 18%,
+      1% 10%,
+      2% 5%
+    );
+  }
+}

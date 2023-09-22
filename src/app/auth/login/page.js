@@ -1,8 +1,8 @@
-import { LoginV2 } from '@/components/view/login'
+import { LoginV4 } from '@/components/view/login'
 import React from 'react'
 
 const LoginPage = () => {
-  return <LoginV2 />
+  return <LoginV4 />
 }
 
 export default LoginPage

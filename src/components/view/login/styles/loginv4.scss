@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// LIGHT MODE
+.light {
+  .login-v4 {
+    .shadow-layer {
+      background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0)
+      );
+    }
+
+    .form-section {
+      .login-form {
+        input {
+          @apply bg-softGray;
+        }
+        input[type='checkbox'] {
+          @apply border-gray-300 checked:bg-blue-700;
+        }
+      }
+    }
+  }
+}
+
+// DARK MODE
+.dark {
+  .login-v4 {
+    .shadow-layer {
+      background-image: linear-gradient(
+        to right,
+        rgba(41, 41, 41, 1),
+        rgba(41, 41, 41, 0.7),
+        rgba(44, 44, 44, 0)
+      );
+    }
+
+    .form-section {
+      .logo-text {
+        @apply text-white;
+      }
+
+      .login-form {
+        h1 {
+          @apply text-white;
+        }
+        input {
+          @apply text-white border border-white;
+          background: rgba(255, 255, 255, 0.19);
+        }
+        input[type='checkbox'] {
+          @apply bg-primaryBlack border-gray-300 checked:bg-blue-700;
+        }
+        .submit-btn {
+          @apply bg-white text-primaryBlack;
+        }
+        .register-btn {
+          @apply border-white text-white;
+        }
+        a {
+          @apply text-gray-400;
+        }
+        .forget-pwd {
+          @apply text-gray-300;
+        }
+      }
+    }
+  }
+}

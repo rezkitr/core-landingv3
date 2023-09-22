@@ -3,7 +3,7 @@ import { Button } from '@/components'
 import { InputCheckBox, InputItem, InputPassword } from '@/components/input'
 import Link from 'next/link'
 
-const LoginFormV1 = () => {
+const LoginForm = () => {
   return (
     <div className="login-form">
       <div className="mb-12">
@@ -13,7 +13,7 @@ const LoginFormV1 = () => {
         </p>
       </div>
       <form>
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-6">
           <InputItem type="text" placeholder="Nomor Handphone" />
           <InputPassword placeholder="Password" />
         </div>
@@ -44,4 +44,4 @@ const LoginFormV1 = () => {
   )
 }
 
-export default LoginFormV1
+export default LoginForm

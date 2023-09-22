@@ -1,6 +1,6 @@
-import { LoginFormV1 } from '@/components/form/login'
+import { LoginForm } from '@/components/form/login'
 import Image from 'next/image'
-import './styles/login.scss'
+import './styles/loginv1.scss'
 import { LogoBrand } from '@/components/others'
 
 const LoginV1 = () => {
@@ -9,7 +9,7 @@ const LoginV1 = () => {
       <div className="form-section flex-1 py-14 pl-12 pr-36">
         <LogoBrand />
         <div className="mt-28">
-          <LoginFormV1 />
+          <LoginForm />
         </div>
       </div>
       <div className="flex-[1.8] py-8">
