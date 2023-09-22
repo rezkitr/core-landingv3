@@ -1,6 +1,7 @@
 'use client'
-import { THEME } from '@/utils/enum'
 import { createSlice } from '@reduxjs/toolkit'
+
+import { THEME } from '@/utils/enum'
 
 const initialState = {
   currentTheme: THEME.DARK,
