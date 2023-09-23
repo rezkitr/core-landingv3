@@ -1,15 +1,15 @@
 import PropTypes from 'prop-types'
 
-const LoginLayout = ({ children }) => {
+const AuthLayout = ({ children }) => {
   return <div className="h-full">{children}</div>
 }
 
-LoginLayout.propTypes = {
+AuthLayout.propTypes = {
   children: PropTypes.node,
 }
 
-LoginLayout.defaultProps = {
+AuthLayout.defaultProps = {
   children: undefined,
 }
 
-export default LoginLayout
+export default AuthLayout

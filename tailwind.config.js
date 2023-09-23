@@ -11,8 +11,13 @@ module.exports = {
       colors: {
         primaryBlack: '#282828',
         softGray: '##F3F3F3',
+        softGray10: '#F6F6F6',
         alternativeGray: '#3E3E3E',
+        alternativeGray10: '#A6A6A6',
       },
+    },
+    container: {
+      center: true,
     },
   },
   plugins: [],
