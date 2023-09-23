@@ -1,22 +1,28 @@
-'use client'
-
 import Link from 'next/link'
 
-import { LogoBrand, NavBarSearch } from './others'
+import {
+  LoginButton,
+  LogoBrand,
+  NavBarSearch,
+  NavLinkItem,
+  ThemeToggleButton,
+} from './others'
+
+import { navLinkItems } from '@/utils/config'
 
 const NavBar = () => {
   return (
-    <div className="h-20 bg-gray-200">
+    <div className="h-20">
       <div className="container flex h-full items-center justify-between">
         <LogoBrand />
-        <div className="flex items-center gap-2">
-          <Link href="/">Beranda</Link>
-          <Link href="/">Lacak Pesanan</Link>
-          <Link href="/">Semua Game</Link>
-          <Link href="/">Price List</Link>
-          <Link href="/">Ulasan</Link>
+        <div className="flex items-center gap-5">
+          {navLinkItems.map((item) => (
+            <NavLinkItem key={item.label} item={item} />
+          ))}
         </div>
         <NavBarSearch />
+        <ThemeToggleButton />
+        <LoginButton />
       </div>
     </div>
   )
