@@ -32,12 +32,14 @@ const LoginForm = () => {
           </Link>
         </div>
         <div className="mt-8">
-          <Button className="submit-btn mb-6">Masuk</Button>
+          <Button className="submit-btn mb-6 bg-primaryBlack text-white">
+            Masuk
+          </Button>
           <Link className="text-sm text-gray-400" href="/">
             Belum punya akun?
           </Link>
           <Button
-            className="helper-btn mt-3 border"
+            className="helper-btn mt-3 border-2 border-primaryBlack"
             onClick={() => router.push('/auth/register')}
           >
             Daftar Sekarang

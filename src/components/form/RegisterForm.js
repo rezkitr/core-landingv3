@@ -24,12 +24,14 @@ const RegisterForm = () => {
           <InputPassword placeholder="Konfirmasi Password" />
         </div>
         <div className="mt-8">
-          <Button className="submit-btn mb-6">Daftar Sekarang</Button>
+          <Button className="submit-btn mb-6 bg-primaryBlack text-white">
+            Daftar Sekarang
+          </Button>
           <Link className="text-sm text-gray-400" href="/">
             Sudah punya akun?
           </Link>
           <Button
-            className="helper-btn mt-3 border"
+            className="helper-btn mt-3 border-2 border-primaryBlack"
             onClick={() => router.push('/auth/login')}
           >
             Masuk
