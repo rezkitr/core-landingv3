@@ -15,7 +15,8 @@
     }
 
     .form-section {
-      .login-form {
+      .login-form,
+      .register-form {
         input {
           @apply bg-softGray;
         }
@@ -44,7 +45,8 @@
         @apply text-white;
       }
 
-      .login-form {
+      .login-form,
+      .register-form {
         h1 {
           @apply text-white;
         }
