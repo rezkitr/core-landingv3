@@ -12,18 +12,18 @@ const ThemeToggleButton = () => {
 
   const onToggleTheme = () => dispatch(toggleTheme())
   return (
-    <div className="flex items-center gap-2 transition">
+    <div className="flex items-center gap-2">
       {isDarkMode ? (
         <BiMoon className="text-2xl" />
       ) : (
         <BiSun className="text-2xl" />
       )}
       <button
-        className="relative h-[26px] w-11 cursor-pointer rounded-full bg-primaryBlack"
+        className="toggle-theme-btn relative h-[26px] w-11 cursor-pointer rounded-full bg-primaryBlack"
         onClick={onToggleTheme}
       >
         <div
-          className={`absolute inset-y-0 my-auto h-5 w-5 rounded-full bg-white transition-all duration-300 ease-in-out ${
+          className={`circle absolute inset-y-0 my-auto h-5 w-5 rounded-full bg-white transition-all duration-300 ease-in-out ${
             isDarkMode ? 'translate-x-5' : 'left-1'
           }`}
         />
