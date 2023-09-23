@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { LoginV1 } from '@/components/view/login'
+import { LoginV1, LoginV2 } from '@/components/view/login'
 
 const LoginPage = () => {
-  return <LoginV1 />
+  return <LoginV2 />
 }
 
 export default LoginPage

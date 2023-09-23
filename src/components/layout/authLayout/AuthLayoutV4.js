@@ -5,7 +5,7 @@ import { LogoBrand } from '@/components/others'
 
 const AuthLayoutV4 = ({ children }) => {
   return (
-    <div className="auth-v4 relative flex h-fit min-h-full bg-[url('/images/login-bg.png')] bg-cover bg-no-repeat">
+    <div className="auth-v4 relative flex min-h-screen bg-[url('/images/login-bg.png')] bg-cover bg-no-repeat">
       <div className="shadow-layer absolute inset-0 z-10" />
       <div className="relative z-20 flex w-full">
         <div className="form-section w-1/2 py-14 pl-12 pr-48">

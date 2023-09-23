@@ -8,7 +8,7 @@ import {
 } from '@/components/view/register'
 
 const RegisterPage = () => {
-  return <RegisterV4 />
+  return <RegisterV1 />
 }
 
 export default RegisterPage
