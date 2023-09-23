@@ -1,9 +1,21 @@
 'use client'
-import { useSelector } from 'react-redux'
+import { useEffect } from 'react'
+
+import { useDispatch, useSelector } from 'react-redux'
+
+import { setTheme } from './slices/themeSlice'
 
 const StoreWrapper = ({ children }) => {
-  const theme = useSelector((state) => state.theme.currentTheme)
-  return <div className={`relative ${theme}`}>{children}</div>
+  const dispatch = useDispatch()
+  const currentTheme = useSelector((state) => state.theme.currentTheme)
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('currentTheme')
+    dispatch(setTheme(JSON.parse(savedTheme)))
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
+
+  return <div className={`relative ${currentTheme}`}>{children}</div>
 }
 
 export default StoreWrapper

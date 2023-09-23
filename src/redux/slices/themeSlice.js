@@ -12,12 +12,17 @@ export const themeSlice = createSlice({
   initialState,
   reducers: {
     toggleTheme: (state) => {
-      state.currentTheme =
+      const usedTheme =
         state.currentTheme === THEME.DARK ? THEME.LIGHT : THEME.DARK
+      state.currentTheme = usedTheme
+      localStorage.setItem('currentTheme', JSON.stringify(usedTheme))
+    },
+    setTheme: (state, action) => {
+      state.currentTheme = action.payload
     },
   },
 })
 
-export const { toggleTheme } = themeSlice.actions
+export const { toggleTheme, setTheme } = themeSlice.actions
 
 export default themeSlice.reducer
