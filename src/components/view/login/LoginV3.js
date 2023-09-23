@@ -1,4 +1,4 @@
-import { LoginForm } from '@/components/form/login'
+import { LoginForm } from '@/components/form'
 import { AuthLayoutV3 } from '@/components/layout/authLayout'
 
 const LoginV1 = () => {

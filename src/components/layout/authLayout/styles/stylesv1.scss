@@ -5,7 +5,8 @@
 // LIGHT MODE
 .light {
   .auth-v1 {
-    .form-section {
+    .form-section,
+    .register-form {
       @apply bg-white;
 
       .login-form {
@@ -30,7 +31,8 @@
         @apply text-white;
       }
 
-      .login-form {
+      .login-form,
+      .register-form {
         h1 {
           @apply text-white;
         }
@@ -43,7 +45,7 @@
         .submit-btn {
           @apply bg-white text-primaryBlack;
         }
-        .register-btn {
+        .helper-btn {
           @apply border-white text-white;
         }
         a {

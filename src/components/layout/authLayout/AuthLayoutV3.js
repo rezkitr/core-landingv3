@@ -8,9 +8,9 @@ import { LogoBrand } from '@/components/others'
 const AuthLayoutV3 = ({ children }) => {
   return (
     <div className="auth-v3 flex h-full">
-      <div className="form-section flex-1 py-14 pl-12 pr-36">
+      <div className="form-section h-fit min-h-full flex-1 py-14 pl-12 pr-36">
         <LogoBrand />
-        <div className="mt-28">{children}</div>
+        <div className="mt-20">{children}</div>
       </div>
       <div className="banner-section flex flex-[1.8] items-center py-14 pr-12">
         <div className="relative flex h-full w-full items-center justify-center">

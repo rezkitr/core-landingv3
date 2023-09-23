@@ -1,9 +1,12 @@
 'use client'
+import Link from 'next/link'
+import { useRouter } from 'next/navigation'
+
 import { Button } from '@/components'
 import { InputCheckBox, InputItem, InputPassword } from '@/components/input'
-import Link from 'next/link'
 
 const LoginForm = () => {
+  const router = useRouter()
   return (
     <div className="login-form">
       <div className="mb-12">
@@ -29,13 +32,14 @@ const LoginForm = () => {
           </Link>
         </div>
         <div className="mt-8">
-          <Button className="submit-btn mb-6 bg-gray-950 text-white">
-            Masuk
-          </Button>
+          <Button className="submit-btn mb-6">Masuk</Button>
           <Link className="text-sm text-gray-400" href="/">
             Belum punya akun?
           </Link>
-          <Button className="register-btn mt-3 border border-gray-950 text-gray-950">
+          <Button
+            className="helper-btn mt-3 border"
+            onClick={() => router.push('/auth/register')}
+          >
             Daftar Sekarang
           </Button>
         </div>
