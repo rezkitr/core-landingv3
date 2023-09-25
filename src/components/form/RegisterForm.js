@@ -23,7 +23,7 @@ const RegisterForm = () => {
           <InputPassword placeholder="Password" />
           <InputPassword placeholder="Konfirmasi Password" />
         </div>
-        <div className="mt-8">
+        <div className="mt-4">
           <Button className="submit-btn mb-6 bg-primaryBlack text-white">
             Daftar Sekarang
           </Button>

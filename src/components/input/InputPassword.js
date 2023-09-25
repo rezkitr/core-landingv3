@@ -13,7 +13,7 @@ const InputPassword = ({ className, ...props }) => {
     <div className="relative">
       <input
         type={isShowPassword ? 'text' : 'password'}
-        className="h-14 w-full rounded-xl bg-gray-100 px-5 focus:outline-none"
+        className="h-14 w-full rounded-xl bg-gray-100 pl-5 pr-14 focus:outline-none"
         {...props}
       />
       <div

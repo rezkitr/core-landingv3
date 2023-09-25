@@ -7,11 +7,14 @@ import { LogoBrand } from '@/components/others'
 const AuthLayoutV1 = ({ children }) => {
   return (
     <div className="auth-v1 flex min-h-screen">
-      <div className="form-section w-1/2 py-14 pl-12 pr-48">
+      <div className="form-section w-full px-6 py-14 md:px-12 lg:w-1/2 lg:pr-24 xl:pr-48">
         <LogoBrand />
         <div className="mt-20">{children}</div>
+        <p className="mt-72 text-center text-alternativeGray10 md:hidden">
+          © PT Bermain Bersama Indonesia, 2023
+        </p>
       </div>
-      <div className="flex-[1.8]">
+      <div className="hidden lg:block lg:flex-[1.8]">
         <div className="relative h-full">
           <Image
             src="/images/login-banner.png"
