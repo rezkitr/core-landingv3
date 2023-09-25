@@ -2,7 +2,7 @@ import Image from 'next/image'
 import PropTypes from 'prop-types'
 
 import './styles/stylesv1.scss'
-import { LogoBrand } from '@/components/others'
+import { AuthCopyright, LogoBrand } from '@/components/others'
 
 const AuthLayoutV1 = ({ children }) => {
   return (
@@ -10,9 +10,7 @@ const AuthLayoutV1 = ({ children }) => {
       <div className="form-section w-full px-6 py-14 md:px-12 lg:w-1/2 lg:pr-24 xl:pr-48">
         <LogoBrand />
         <div className="mt-20">{children}</div>
-        <p className="mt-72 text-center text-alternativeGray10 md:hidden">
-          © PT Bermain Bersama Indonesia, 2023
-        </p>
+        <AuthCopyright />
       </div>
       <div className="hidden lg:block lg:flex-[1.8]">
         <div className="relative h-full">
