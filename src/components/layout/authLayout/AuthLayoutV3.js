@@ -1,18 +1,17 @@
-import Image from 'next/image'
 import './styles/stylesv3.scss'
 import PropTypes from 'prop-types'
 
-import './styles/stylesv1.scss'
-import { LogoBrand } from '@/components/others'
+import { AuthCopyright, LogoBrand } from '@/components/others'
 
 const AuthLayoutV3 = ({ children }) => {
   return (
     <div className="auth-v3 flex min-h-screen">
-      <div className="form-section w-1/2 shrink-0 py-14 pl-12 pr-48">
+      <div className="form-section w-full px-6 py-14 md:px-12 lg:w-1/2 lg:shrink-0 lg:pr-24 xl:pr-48">
         <LogoBrand />
         <div className="mt-20">{children}</div>
+        <AuthCopyright />
       </div>
-      <div className="banner-section flex flex-[1.8] items-center py-14 pr-12">
+      <div className="banner-section hidden items-center py-14 pr-12 lg:flex lg:flex-[1.8]">
         <div className="relative flex h-full w-full items-center justify-center">
           <div className="banner-wrapper absolute inset-0" />
           <div className="banner-inner absolute inset-1 z-10" />
