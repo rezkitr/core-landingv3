@@ -14,6 +14,15 @@
       );
     }
 
+    .shadow-layer-mobile {
+      background-image: linear-gradient(
+        to top,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0.3)
+      );
+    }
+
     .form-section {
       .login-form,
       .register-form {
@@ -31,11 +40,22 @@
 // DARK MODE
 .dark {
   .auth-v4 {
+    @apply bg-primaryBlack;
+
     .shadow-layer {
       background-image: linear-gradient(
         to right,
         rgba(41, 41, 41, 1),
         rgba(41, 41, 41, 0.7),
+        rgba(44, 44, 44, 0)
+      );
+    }
+
+    .shadow-layer-mobile {
+      background-image: linear-gradient(
+        to top,
+        rgba(41, 41, 41, 1),
+        rgba(41, 41, 41, 0.5),
         rgba(44, 44, 44, 0)
       );
     }
