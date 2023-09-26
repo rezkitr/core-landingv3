@@ -5,6 +5,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { toggleTheme } from '@/redux/slices/themeSlice'
 import { THEME } from '@/utils/enum'
 
+import './styles.scss'
+
 const ThemeToggleButton = () => {
   const dispatch = useDispatch()
   const currentTheme = useSelector((state) => state.theme.currentTheme)

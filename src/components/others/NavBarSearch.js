@@ -10,7 +10,7 @@ const NavBarSearch = () => {
         name="keyword"
         id="keyword"
         placeholder="Cari ..."
-        className="h-[34px] w-[170px] rounded-3xl bg-[#F6F6F6] pl-10 text-alternativeGray focus:outline-none"
+        className="h-[34px] w-full rounded-3xl bg-[#F6F6F6] pl-10 text-alternativeGray focus:outline-none xl:w-[170px]"
       />
     </div>
   )

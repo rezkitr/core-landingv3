@@ -6,7 +6,11 @@
 
 // DARK
 .dark {
-  .navbar {
-    @apply bg-primaryBlack text-white;
+  .toggle-theme-btn {
+    @apply bg-white;
+
+    .circle {
+      @apply bg-primaryBlack;
+    }
   }
 }

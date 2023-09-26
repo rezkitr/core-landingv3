@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 
 import './styles/stylesv4.scss'
-import { AuthCopyright, LogoBrand } from '@/components/others'
+import { Copyright, LogoBrand } from '@/components/others'
 
 const AuthLayoutV4 = ({ children }) => {
   return (
@@ -15,7 +15,7 @@ const AuthLayoutV4 = ({ children }) => {
           <div className="form-section w-full px-6 pb-14 pt-8 md:px-12 lg:w-1/2 lg:pr-24 lg:pt-14 xl:pr-48">
             <LogoBrand />
             <div className="mt-20">{children}</div>
-            <AuthCopyright />
+            <Copyright />
           </div>
         </div>
         <div className="hidden lg:block lg:flex-[1.8]" />

@@ -6,7 +6,9 @@
 
 // DARK
 .dark {
-  .navbar {
-    @apply bg-primaryBlack text-white;
+  .side-navbar {
+    .content {
+      @apply bg-primaryBlack text-white;
+    }
   }
 }

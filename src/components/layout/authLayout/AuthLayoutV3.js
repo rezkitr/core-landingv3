@@ -1,7 +1,7 @@
 import './styles/stylesv3.scss'
 import PropTypes from 'prop-types'
 
-import { AuthCopyright, LogoBrand } from '@/components/others'
+import { Copyright, LogoBrand } from '@/components/others'
 
 const AuthLayoutV3 = ({ children }) => {
   return (
@@ -9,7 +9,7 @@ const AuthLayoutV3 = ({ children }) => {
       <div className="form-section w-full px-6 py-14 md:px-12 lg:w-1/2 lg:shrink-0 lg:pr-24 xl:pr-48">
         <LogoBrand />
         <div className="mt-20">{children}</div>
-        <AuthCopyright />
+        <Copyright />
       </div>
       <div className="banner-section hidden items-center py-14 pr-12 lg:flex lg:flex-[1.8]">
         <div className="relative flex h-full w-full items-center justify-center">
