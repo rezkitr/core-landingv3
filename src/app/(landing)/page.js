@@ -1,5 +1,11 @@
+import { FlashSaleV1 } from '@/components/flashsale'
+
 const Dashboard = () => {
-  return <div>Dashboard</div>
+  return (
+    <div>
+      <FlashSaleV1 />
+    </div>
+  )
 }
 
 export default Dashboard

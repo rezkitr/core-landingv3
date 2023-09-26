@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flip-countdown {
+  margin: unset !important;
+
+  .flip-countdown-title {
+    @apply hidden;
+  }
+  .flip-countdown-piece {
+    @apply my-0 mx-1;
+    .flip-countdown-card {
+      .flip-countdown-card-sec {
+        @apply text-4xl #{!important};
+      }
+      .card__top {
+        background: #c21010 !important;
+      }
+      .card__bottom {
+        background: #e64848 !important;
+      }
+
+      .card__back::before {
+        background: #e64848 !important;
+      }
+    }
+  }
+}
