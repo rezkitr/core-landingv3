@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 // LIGHT
+.light {
+  .navbar {
+    @apply bg-white;
+  }
+}
 
 // DARK
 .dark {

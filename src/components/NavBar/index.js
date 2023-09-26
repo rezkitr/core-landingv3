@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="navbar h-20">
+      <div className="navbar fixed inset-x-0 top-0 z-10 h-20">
         <div className="container flex h-full items-center justify-between gap-5 px-4 2xl:px-32">
           <LogoBrand withText={!size.isLgScreen} />
           <div className="hidden items-center gap-4 xl:flex">
