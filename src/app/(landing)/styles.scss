@@ -5,7 +5,8 @@
 // LIGHT
 // DARK
 .dark {
-  .content {
+  .content,
+  .flash-sale-bg {
     @apply bg-primaryBlack;
   }
 }
