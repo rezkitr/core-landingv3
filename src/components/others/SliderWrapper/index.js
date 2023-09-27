@@ -10,6 +10,7 @@ const SliderWrapper = ({ children, config = {} }) => {
     speed: 500,
     slidesToShow: config.slidesToShow || 1,
     slidesToScroll: 1,
+    ...config,
   }
   return <Slider {...slideConfig}>{children}</Slider>
 }
