@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// LIGHT
+// DARK
+.light {
+  .flash-sale-box {
+    @apply bg-primaryBlack;
+
+    .timer {
+      @apply bg-softGray20 text-primaryBlack;
+    }
+  }
+}

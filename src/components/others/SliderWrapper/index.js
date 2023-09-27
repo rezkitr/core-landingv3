@@ -4,13 +4,12 @@ import './styles.scss'
 
 const SliderWrapper = ({ children, config = {} }) => {
   const slideConfig = {
-    autoplay: true,
-    dots: false,
+    autoplay: config.autoplay,
+    dots: config.dots || false,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: config.slidesToShow || 1,
     slidesToScroll: 1,
-    ...config,
   }
   return <Slider {...slideConfig}>{children}</Slider>
 }
