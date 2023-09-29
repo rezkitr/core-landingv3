@@ -9,7 +9,7 @@ import { ProductCardV1 } from '@/components/productcard'
 const FlashSaleV3 = () => {
   const sliderConfig = {
     autoplay: false,
-    slidesToShow: 2,
+    slidesToShow: 5,
     arrows: false,
   }
   return (
@@ -25,6 +25,9 @@ const FlashSaleV3 = () => {
         </div>
         <div className="px-12 py-8">
           <SliderWrapper config={sliderConfig}>
+            <ProductCardV1 />
+            <ProductCardV1 />
+            <ProductCardV1 />
             <ProductCardV1 />
             <ProductCardV1 />
           </SliderWrapper>

@@ -11,7 +11,7 @@
   .flip-countdown-piece {
     @apply my-0 mx-1;
     .flip-countdown-card {
-      .flip-countdown-card-sec {
+      Y .flip-countdown-card-sec {
         @apply text-3xl xl:text-4xl #{!important};
       }
       .card__top {
@@ -23,6 +23,17 @@
 
       .card__back::before {
         background: #e64848 !important;
+      }
+    }
+  }
+
+  &.size-extra-small {
+    .flip-countdown-piece {
+      @apply my-0 #{!important};
+      .flip-countdown-card {
+        .flip-countdown-card-sec {
+          @apply text-xl xl:text-3xl #{!important};
+        }
       }
     }
   }

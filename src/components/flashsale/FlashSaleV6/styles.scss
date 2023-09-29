@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.flash-sale-box-v6 {
+  svg {
+    @apply -ml-8;
+    polygon {
+      @apply fill-white;
+    }
+  }
+}

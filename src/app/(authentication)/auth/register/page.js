@@ -1,5 +1,3 @@
-import React from 'react'
-
 import {
   RegisterV1,
   RegisterV2,
