@@ -4,8 +4,6 @@ import './styles.scss'
 
 const SliderWrapper = ({ children, config = {} }) => {
   const slideConfig = {
-    autoplay: config.autoplay,
-    dots: config.dots || false,
     infinite: true,
     speed: 500,
     slidesToShow: config.slidesToShow || 1,

@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+svg {
+  polygon {
+    @apply fill-primaryBlack;
+  }
+}
+
+// CUSTOM SLIDER STYLES
+.slick-dots {
+  @apply -bottom-7 px-2.5 flex items-center #{!important};
+
+  li {
+    @apply flex-1 h-auto bg-alternativeGray10 m-0;
+
+    button {
+      @apply w-full p-0 h-0.5;
+
+      &::before {
+        @apply content-none;
+      }
+    }
+  }
+  .slick-active {
+    @apply bg-primaryBlack;
+  }
+}
