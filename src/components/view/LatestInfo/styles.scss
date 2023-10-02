@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.latest-info {
+  .slick-slider {
+    .slick-slide {
+      @apply px-4 #{!important};
+    }
+  }
+
+  .slick-dots {
+    @apply bottom-4 #{!important};
+
+    li {
+      @apply w-20 h-2 bg-white rounded-lg #{!important};
+
+      &.slick-active {
+        @apply bg-black #{!important};
+      }
+
+      button {
+        @apply w-full #{!important};
+        &::before {
+          @apply content-none;
+        }
+      }
+    }
+  }
+}

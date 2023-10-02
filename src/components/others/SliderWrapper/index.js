@@ -5,9 +5,9 @@ import './styles.scss'
 
 const SliderWrapper = ({ children, config = {} }) => {
   const slideConfig = {
-    infinite: true,
+    infinite: config.infinite ?? true,
     speed: 500,
-    slidesToShow: config.slidesToShow || 1,
+    slidesToShow: config.slidesToShow ?? 1,
     slidesToScroll: 1,
     ...config,
   }

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// LIGHT
+// DARK
+.dark {
+  .section-title {
+    @apply text-white;
+  }
+}

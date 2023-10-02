@@ -7,7 +7,7 @@ import './styles.scss'
 
 const FlashSaleV6 = () => {
   const sliderConfig = {
-    autoplay: true,
+    autoplay: false,
     slidesToShow: 5,
     arrows: false,
   }
