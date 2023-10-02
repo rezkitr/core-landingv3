@@ -20,7 +20,7 @@ import './styles.scss'
 
 const NavBar = () => {
   const [size] = useGetScreenSize()
-  const [showSideBarNav, setShowSideBarNav] = useState(true)
+  const [showSideBarNav, setShowSideBarNav] = useState(false)
 
   return (
     <>

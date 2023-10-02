@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-// .slick-slide {
-//   @apply w-fit #{!important};
-// }
+.slick-slide {
+  @apply mx-1 md:mx-3 #{!important};
+}
 
 // .slick-track {
 //   @apply flex;

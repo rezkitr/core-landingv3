@@ -8,15 +8,15 @@ import { ProductCardV1 } from '@/components/productcard'
 
 const FlashSaleV4 = () => {
   const sliderConfig = {
-    autoplay: false,
-    slidesToShow: 5,
+    autoplay: true,
     arrows: false,
+    variableWidth: true,
   }
   return (
     <div className="container relative -mt-48">
-      <div className="flash-sale-box relative overflow-hidden rounded-2xl bg-softGray20 px-12 py-8 shadow-lg">
+      <div className="flash-sale-box relative overflow-hidden rounded-2xl bg-softGray20 px-6 py-8 shadow-lg md:px-12 md:py-8">
         <BgLayer />
-        <div className="timer flex w-fit items-center text-lg md:text-xl lg:text-3xl xl:text-4xl">
+        <div className="timer relative flex w-fit items-center text-xl md:text-3xl xl:text-4xl">
           <FcFlashOn />
           <h3 className="font-bold">FLASH SALE</h3>
           <div className="ml-6">

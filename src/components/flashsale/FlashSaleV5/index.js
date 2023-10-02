@@ -8,9 +8,9 @@ import './styles.scss'
 
 const FlashSaleV5 = () => {
   const sliderConfig = {
-    autoplay: false,
-    slidesToShow: 4,
+    autoplay: true,
     arrows: false,
+    variableWidth: true,
     dots: true,
   }
   return (

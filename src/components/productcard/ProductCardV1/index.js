@@ -5,7 +5,7 @@ import Button from '@/components/Button'
 const ProductCardV1 = ({ className = '' }) => {
   return (
     <div
-      className={`product-card relative mx-auto h-72 w-[200px] max-w-[200px] overflow-hidden rounded-xl bg-primaryBlack ${className}`}
+      className={`product-card relative h-72 w-[200px] max-w-[200px] overflow-hidden rounded-xl bg-primaryBlack ${className}`}
     >
       <div className="relative h-52">
         <Image

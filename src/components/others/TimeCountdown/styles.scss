@@ -3,37 +3,27 @@
 @tailwind utilities;
 
 .flip-countdown {
+  display: flex;
   margin: unset !important;
 
   .flip-countdown-title {
     @apply hidden;
   }
   .flip-countdown-piece {
-    @apply my-0 mx-1;
+    @apply mx-1  #{!important};
     .flip-countdown-card {
-      Y .flip-countdown-card-sec {
-        @apply text-3xl xl:text-4xl #{!important};
+      .flip-countdown-card-sec {
+        @apply text-2xl md:text-3xl 2xl:text-[32px] leading-6 md:leading-8 #{!important};
       }
       .card__top {
-        background: #c21010 !important;
+        @apply bg-[#c21010] #{!important};
       }
       .card__bottom {
-        background: #e64848 !important;
+        @apply bg-[#e64848] #{!important};
       }
 
       .card__back::before {
-        background: #e64848 !important;
-      }
-    }
-  }
-
-  &.size-extra-small {
-    .flip-countdown-piece {
-      @apply my-0 #{!important};
-      .flip-countdown-card {
-        .flip-countdown-card-sec {
-          @apply text-xl xl:text-3xl #{!important};
-        }
+        @apply bg-[#e64848] #{!important};
       }
     }
   }

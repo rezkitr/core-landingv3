@@ -4,7 +4,7 @@
 
 .flash-sale-box-v6 {
   svg {
-    @apply -ml-8;
+    @apply -ml-4 md:-ml-8;
     polygon {
       @apply fill-white;
     }
