@@ -6,7 +6,7 @@ import {
   FlashSaleV5,
   FlashSaleV6,
 } from '@/components/flashsale'
-import LatestInfo from '@/components/view/LatestInfo'
+import { LatestInfo, ProductList } from '@/components/view'
 
 const Dashboard = () => {
   return (
@@ -17,6 +17,7 @@ const Dashboard = () => {
       </div>
       <div className="content bg-softGray pt-20">
         <LatestInfo />
+        <ProductList />
       </div>
     </div>
   )

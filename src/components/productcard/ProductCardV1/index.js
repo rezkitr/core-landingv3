@@ -2,9 +2,11 @@ import Image from 'next/image'
 
 import Button from '@/components/Button'
 
-const ProductCardV1 = () => {
+const ProductCardV1 = ({ className = '' }) => {
   return (
-    <div className="product-card relative mx-auto h-72 w-[200px] max-w-[200px] overflow-hidden rounded-xl bg-softGray20">
+    <div
+      className={`product-card relative mx-auto h-72 w-[200px] max-w-[200px] overflow-hidden rounded-xl bg-primaryBlack ${className}`}
+    >
       <div className="relative h-52">
         <Image
           src="/images/productcard-img.png"

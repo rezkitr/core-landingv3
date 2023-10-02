@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         primaryBlack: '#282828',
         secondaryBlack: '#292929',
+        alternativeBlack: '#1A1A1A',
         softGray: '#F3F3F3',
         softGray10: '#F6F6F6',
         softGray20: '#EAEAEA',
@@ -20,6 +21,10 @@ module.exports = {
     },
     container: {
       center: true,
+      padding: {
+        DEFAULT: '1rem',
+        '2xl': '8rem',
+      },
     },
   },
   plugins: [],

@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// LIGHT
+// DARK
+.dark {
+  .home-product-list {
+    div[role='tablist'] {
+      button {
+        @apply text-alternativeGray10;
+
+        &.selected {
+          @apply bg-white text-primaryBlack;
+        }
+      }
+    }
+  }
+}

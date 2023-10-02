@@ -11,7 +11,7 @@ const FlashSaleV2 = () => {
     arrows: false,
   }
   return (
-    <div className="container relative -mt-48 px-4 2xl:px-32">
+    <div className="container relative -mt-48">
       <div className="flash-sale-box overflow-hidden rounded-2xl bg-white px-12 py-8 shadow-lg">
         <div className="timer flex w-fit items-center text-lg md:text-xl lg:text-3xl xl:text-4xl">
           <FcFlashOn />

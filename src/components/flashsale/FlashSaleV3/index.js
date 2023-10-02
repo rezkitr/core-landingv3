@@ -13,7 +13,7 @@ const FlashSaleV3 = () => {
     arrows: false,
   }
   return (
-    <div className="container relative -mt-52 px-4 2xl:px-32">
+    <div className="container relative -mt-52">
       <div className="flash-sale-box relative overflow-hidden rounded-2xl bg-softGray20 shadow-lg">
         <BgLayer />
         <div className="timer flex w-fit items-center rounded-br-2xl bg-primaryBlack px-3 py-4 text-lg text-white md:text-xl lg:text-3xl xl:text-4xl">

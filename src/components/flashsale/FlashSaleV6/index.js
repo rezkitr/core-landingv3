@@ -12,7 +12,7 @@ const FlashSaleV6 = () => {
     arrows: false,
   }
   return (
-    <div className="container relative -mt-48 px-4 2xl:px-32">
+    <div className="container relative -mt-48">
       <div className="flash-sale-box-v6 relative flex overflow-hidden rounded-2xl bg-white shadow-lg">
         <div className="flex shrink-0 flex-col gap-3 rounded-r-2xl bg-gradient-to-r from-alternativeGray to-secondaryBlack py-10 pl-8 pr-24">
           <FcFlashOn className="text-9xl" />

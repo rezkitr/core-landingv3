@@ -14,7 +14,7 @@ const FlashSaleV5 = () => {
     dots: true,
   }
   return (
-    <div className="container relative -mt-48 px-4 2xl:px-32">
+    <div className="container relative -mt-48">
       <div className="flash-sale-box-v5 flex overflow-hidden rounded-2xl bg-softGray20 shadow-lg">
         <div className="rounded-r-2xl bg-primaryBlack px-8 py-14">
           <div className="flex w-60 flex-col items-center gap-2 rounded-2xl bg-gradient-to-b from-softGray20 py-4 text-center">
