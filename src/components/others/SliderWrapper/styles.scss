@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .slick-slide {
-  @apply mx-1 md:mx-3 #{!important};
+  @apply mx-1 lg:mx-3 #{!important};
 }
 
 // .slick-track {

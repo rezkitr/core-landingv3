@@ -11,7 +11,7 @@ import { LatestInfo, ProductList } from '@/components/view'
 const Dashboard = () => {
   return (
     <div>
-      <div className="relative h-[700px] bg-gray-400 bg-[url('/images/home-banner.png')] bg-cover bg-no-repeat"></div>
+      <div className="relative h-[800px] bg-gray-400 bg-[url('/images/home-banner.png')] bg-cover bg-no-repeat lg:h-[700px]"></div>
       <div className="flash-sale-bg bg-softGray">
         <FlashSaleV6 />
       </div>

@@ -13,7 +13,7 @@
     @apply mx-1  #{!important};
     .flip-countdown-card {
       .flip-countdown-card-sec {
-        @apply text-2xl md:text-3xl 2xl:text-[32px] leading-6 md:leading-8 #{!important};
+        @apply text-xl sm:text-2xl md:text-3xl 2xl:text-[32px] leading-5 sm:leading-6 md:leading-8 #{!important};
       }
       .card__top {
         @apply bg-[#c21010] #{!important};
