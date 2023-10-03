@@ -11,7 +11,7 @@
 
   // CUSTOM SLIDER STYLES
   .slick-dots {
-    @apply -bottom-8 px-2.5 flex items-center #{!important};
+    @apply -bottom-5 md:-bottom-8 px-2.5 flex items-center #{!important};
 
     li {
       @apply flex-1 h-auto bg-alternativeGray10 m-0;
