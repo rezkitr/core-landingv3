@@ -13,7 +13,7 @@ const Dashboard = () => {
     <div>
       <div className="relative h-[800px] bg-gray-400 bg-[url('/images/home-banner.png')] bg-cover bg-no-repeat lg:h-[700px]"></div>
       <div className="flash-sale-bg bg-softGray">
-        <FlashSaleV5 />
+        <FlashSaleV1 />
       </div>
       <div className="content bg-softGray pt-20">
         <LatestInfo />

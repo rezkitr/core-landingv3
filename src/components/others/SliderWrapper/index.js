@@ -11,6 +11,7 @@ const SliderWrapper = ({ children, config = {} }) => {
     slidesToScroll: 1,
     infinite: config.infinite ?? true,
     arrows: config.arrows ?? false,
+    adaptiveHeight: config.adaptiveHeight ?? true,
     ...config,
   }
   return <Slider {...slideConfig}>{children}</Slider>

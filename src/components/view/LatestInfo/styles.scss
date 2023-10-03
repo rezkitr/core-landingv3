@@ -5,7 +5,7 @@
 .latest-info {
   .slick-slider {
     .slick-slide {
-      @apply px-4 #{!important};
+      @apply mx-0 #{!important};
     }
   }
 
@@ -13,7 +13,7 @@
     @apply bottom-4 #{!important};
 
     li {
-      @apply w-20 h-2 bg-white rounded-lg #{!important};
+      @apply w-12 h-2 md:w-20 bg-white rounded-lg #{!important};
 
       &.slick-active {
         @apply bg-black #{!important};
