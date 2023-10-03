@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import Button from '@/components/Button'
 
-const ProductCardV1 = ({ className = '' }) => {
+const ProductCardV1 = ({ isPromo = false, className = '' }) => {
   return (
     <div
       className={`product-card relative h-64 w-[140px] max-w-[140px] overflow-hidden rounded-xl bg-primaryBlack md:h-72 md:w-[200px] md:max-w-[200px] ${className}`}
@@ -28,16 +28,22 @@ const ProductCardV1 = ({ className = '' }) => {
             </div>
           </div>
         </div>
-        <div className="h-[115px] rounded-tl-xl bg-primaryBlack px-4 pb-2 pt-3 md:h-24">
+        <div className="rounded-tl-xl bg-primaryBlack px-4 pb-4 pt-3">
           <p className="line-clamp-2 text-sm font-semibold text-white">
             Weekly Diamond Pass
           </p>
-          <p className="mt-2 text-xs text-alternativeGray10 line-through">
-            Rp 29.500
-          </p>
-          <Button className="h-fit !w-fit !rounded-md bg-red-600 px-3 py-1 text-xs text-white">
-            Rp 27.000
-          </Button>
+          {isPromo ? (
+            <>
+              <p className="mt-2 text-xs text-alternativeGray10 line-through">
+                Rp 29.500
+              </p>
+              <div className="h-fit !w-fit !rounded-md bg-red-600 px-3 py-1 text-xs text-white">
+                Rp 27.000
+              </div>
+            </>
+          ) : (
+            <p className="mt-2 text-xs text-alternativeGray10">Developer</p>
+          )}
         </div>
       </div>
     </div>
