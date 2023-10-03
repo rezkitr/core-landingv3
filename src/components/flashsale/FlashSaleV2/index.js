@@ -6,8 +6,6 @@ import { ProductCardV1 } from '@/components/productcard'
 
 const FlashSaleV2 = () => {
   const sliderConfig = {
-    autoplay: true,
-    arrows: false,
     variableWidth: true,
   }
   return (

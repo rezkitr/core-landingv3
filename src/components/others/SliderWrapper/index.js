@@ -5,10 +5,12 @@ import './styles.scss'
 
 const SliderWrapper = ({ children, config = {} }) => {
   const slideConfig = {
-    infinite: config.infinite ?? true,
+    autoplay: config.autoplay ?? true,
     speed: 500,
     slidesToShow: config.slidesToShow ?? 1,
     slidesToScroll: 1,
+    infinite: config.infinite ?? true,
+    arrows: config.arrows ?? false,
     ...config,
   }
   return <Slider {...slideConfig}>{children}</Slider>

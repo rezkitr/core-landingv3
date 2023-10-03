@@ -8,10 +8,9 @@ import './styles.scss'
 
 const FlashSaleV6 = () => {
   const sliderConfig = {
-    autoplay: false,
-    arrows: false,
     variableWidth: true,
   }
+
   return (
     <div className="container relative -mt-48">
       <div className="flash-sale-box-v6 flex overflow-hidden rounded-2xl bg-white shadow-lg">
