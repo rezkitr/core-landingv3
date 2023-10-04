@@ -6,6 +6,7 @@ import './styles.scss'
 
 const LatestInfo = () => {
   const sliderConfig = {
+    autoplay: false,
     centerMode: true,
     variableWidth: true,
     dots: true,

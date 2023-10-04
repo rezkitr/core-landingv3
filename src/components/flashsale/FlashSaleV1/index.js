@@ -7,6 +7,7 @@ import { ProductCardV1 } from '@/components/productcard'
 const FlashSaleV1 = () => {
   const sliderConfig = {
     variableWidth: true,
+    autoplay: false,
   }
   return (
     <div className="container relative -mt-52">

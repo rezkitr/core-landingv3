@@ -3,9 +3,9 @@
 import { Tab } from '@headlessui/react'
 
 import { SectionTitle } from '@/components/others'
+import { ProductCardV1 } from '@/components/productcard'
 
 import './styles.scss'
-import { ProductCardV1 } from '@/components/productcard'
 
 const ProductList = () => {
   const CATEGORIES = [
@@ -20,14 +20,14 @@ const ProductList = () => {
   return (
     <div className="home-product-list mt-16">
       <SectionTitle title="Temukan Game Favorit" />
-      <div className="container mt-8 flex h-[500px] space-x-12">
+      <div className="container mt-8 flex h-[500px] flex-col space-y-6 md:flex-row md:space-x-12">
         <Tab.Group>
-          <Tab.List className="flex flex-col items-start space-y-4">
+          <Tab.List className="flex h-fit items-center overflow-x-scroll md:flex-col md:items-start md:space-y-4">
             {CATEGORIES.map((cat) => (
               <Tab
                 key={cat}
                 className={({ selected }) =>
-                  `text-primaryBlack py-3 px-4 rounded-lg text-sm w-36 text-left outline-none ${
+                  `text-primaryBlack py-2 md:py-3 px-4 rounded-lg text-sm min-w-max md:w-36 md:text-left outline-none ${
                     selected
                       ? 'selected bg-primaryBlack text-white font-semibold'
                       : ''
@@ -40,7 +40,7 @@ const ProductList = () => {
           </Tab.List>
           <Tab.Panels className="flex-1">
             <Tab.Panel>
-              <div className="grid grid-cols-5">{/* CONTENT GIES HERE */}</div>
+              <div className="grid grid-cols-5">{/* CONTENT GOES HERE */}</div>
             </Tab.Panel>
           </Tab.Panels>
         </Tab.Group>

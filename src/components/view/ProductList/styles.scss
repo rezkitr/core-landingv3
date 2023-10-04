@@ -17,3 +17,11 @@
     }
   }
 }
+
+div[role='tablist'] {
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+  &::-webkit-scrollbar {
+    @apply hidden #{!important};
+  }
+}
