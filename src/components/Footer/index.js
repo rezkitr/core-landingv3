@@ -12,13 +12,13 @@ const Footer = () => {
   const pathname = usePathname()
   const { siteLinks, otherLinks, socialLinks } = footerItems
   return (
-    <div className="container pb-6 pt-20">
-      <div className="mb-20 grid grid-cols-12">
+    <div className="footer container pb-6 pt-12 lg:pt-20">
+      <div className="mb-10 grid grid-cols-4 space-y-8 lg:mb-20 lg:grid-cols-12 lg:space-y-0">
         <div className="col-span-4">
           <LogoBrand logoHeight={64} logoWidth={72} textClassName="text-xl" />
         </div>
         <div className="col-span-2">
-          <h3 className="mb-4 font-semibold">PETA SITUS</h3>
+          <h3 className="mb-2 font-semibold md:mb-4">PETA SITUS</h3>
           <div className="flex flex-col space-y-3">
             {siteLinks.map((link) =>
               link.action ? (
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="col-span-2">
-          <h3 className="mb-4 font-semibold">TOP UP LAINNYA</h3>
+          <h3 className="mb-2 font-semibold md:mb-4">TOP UP LAINNYA</h3>
           <div className="flex flex-col space-y-3">
             {otherLinks.map((link) => (
               <Link key={link.label} href={link.href}>
@@ -47,9 +47,9 @@ const Footer = () => {
             ))}
           </div>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-4 lg:col-span-2">
           <div>
-            <h3 className="mb-4 font-semibold">IKUTI KAMI</h3>
+            <h3 className="mb-2 font-semibold md:mb-4">IKUTI KAMI</h3>
             <div className="flex items-center space-x-3">
               {socialLinks.map((link) => (
                 <Link
@@ -63,18 +63,23 @@ const Footer = () => {
             </div>
           </div>
           <div className="mt-8">
-            <h3 className="mb-4 font-semibold">KONTAK KAMI</h3>
+            <h3 className="mb-2 font-semibold md:mb-4">KONTAK KAMI</h3>
             <Link href="/">contact@h2h.id</Link>
           </div>
         </div>
-        <div />
       </div>
-      <div className="h-1 border-b border-solid border-alternativeGray10" />
+      <div className="hidden h-1 border-b border-solid border-alternativeGray10 md:block" />
       <div className="mt-4 flex items-center justify-between text-sm">
         <p>© PT BERMAIN BERSAMA INDONESIA, 2023</p>
-        <Link href="/">Kebijakan Privasi</Link>
-        <Link href="/">Terms of Service</Link>
-        <Link href="/">Hubungi Kami</Link>
+        <Link href="/" className="hidden md:inline-block">
+          Kebijakan Privasi
+        </Link>
+        <Link href="/" className="hidden md:inline-block">
+          Terms of Service
+        </Link>
+        <Link href="/" className="hidden md:inline-block">
+          Hubungi Kami
+        </Link>
       </div>
     </div>
   )
