@@ -1,4 +1,4 @@
-import { NavBar } from '@/components'
+import { Footer, NavBar } from '@/components'
 
 import './styles.scss'
 
@@ -7,6 +7,7 @@ export default function LandingLayout({ children }) {
     <div className="relative">
       <NavBar />
       <div className="mt-20">{children}</div>
+      <Footer />
     </div>
   )
 }
