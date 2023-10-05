@@ -1,5 +1,4 @@
 import './styles/stylesv3.scss'
-import PropTypes from 'prop-types'
 
 import { Copyright, LogoBrand } from '@/components/others'
 
@@ -48,10 +47,6 @@ const AuthLayoutV3 = ({ children }) => {
       </div>
     </div>
   )
-}
-
-AuthLayoutV3.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default AuthLayoutV3

@@ -1,10 +1,9 @@
 'use client'
 import { useState } from 'react'
 
-import PropTypes from 'prop-types'
 import { BsEye, BsEyeSlash } from 'react-icons/bs'
 
-const InputPassword = ({ className, ...props }) => {
+const InputPassword = ({ className = '', ...props }) => {
   const [isShowPassword, setIsShowPassword] = useState(false)
 
   const toggleShowPassword = () => setIsShowPassword((prev) => !prev)
@@ -24,14 +23,6 @@ const InputPassword = ({ className, ...props }) => {
       </div>
     </div>
   )
-}
-
-InputPassword.propTypes = {
-  className: PropTypes.string,
-}
-
-InputPassword.defaultProps = {
-  className: '',
 }
 
 export default InputPassword

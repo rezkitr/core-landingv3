@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import PropTypes from 'prop-types'
 
 import './styles/stylesv2.scss'
 import { Copyright, LogoBrand } from '@/components/others'
@@ -24,10 +23,6 @@ const AuthLayoutV2 = ({ children }) => {
       </div>
     </div>
   )
-}
-
-AuthLayoutV2.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default AuthLayoutV2

@@ -1,7 +1,6 @@
 'use client'
-import PropTypes from 'prop-types'
 
-const InputCheckbox = ({ className, ...props }) => {
+const InputCheckbox = ({ className = '', ...props }) => {
   return (
     <div className="relative">
       <input
@@ -23,14 +22,6 @@ const InputCheckbox = ({ className, ...props }) => {
       </svg>
     </div>
   )
-}
-
-InputCheckbox.propTypes = {
-  className: PropTypes.string,
-}
-
-InputCheckbox.defaultProps = {
-  className: '',
 }
 
 export default InputCheckbox

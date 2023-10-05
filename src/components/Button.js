@@ -1,7 +1,13 @@
 'use client'
-import PropTypes from 'prop-types'
 
-const Button = ({ children, type, className, disabled, onClick, ...props }) => {
+const Button = ({
+  children = '',
+  type = 'button',
+  className = '',
+  disabled = false,
+  onClick = () => {},
+  ...props
+}) => {
   return (
     <button
       type={type}
@@ -13,22 +19,6 @@ const Button = ({ children, type, className, disabled, onClick, ...props }) => {
       {children}
     </button>
   )
-}
-
-Button.propTypes = {
-  children: PropTypes.node,
-  type: PropTypes.string,
-  className: PropTypes.string,
-  disabled: PropTypes.bool,
-  onClick: PropTypes.func,
-}
-
-Button.defaultProps = {
-  children: '',
-  type: 'button',
-  className: '',
-  disabled: false,
-  onClick: () => {},
 }
 
 export default Button

@@ -1,7 +1,6 @@
 'use client'
 import { useState, useEffect } from 'react'
 
-import PropTypes from 'prop-types'
 import { MdOutlineKeyboardDoubleArrowRight } from 'react-icons/md'
 
 import {
@@ -15,7 +14,7 @@ import { navLinkItems } from '@/utils/config'
 
 import './styles.scss'
 
-const SideNavBar = ({ show, setShow }) => {
+const SideNavBar = ({ show = false, setShow = () => {} }) => {
   const [showContent, setShowContent] = useState(false)
 
   useEffect(() => {
@@ -70,16 +69,6 @@ const SideNavBar = ({ show, setShow }) => {
       </div>
     </div>
   )
-}
-
-SideNavBar.propTypes = {
-  show: PropTypes.bool,
-  setShow: PropTypes.func,
-}
-
-SideNavBar.defaultProps = {
-  show: false,
-  setShow: () => {},
 }
 
 export default SideNavBar
